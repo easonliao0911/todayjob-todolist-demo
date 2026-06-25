@@ -7,8 +7,7 @@
 
 ## Demo
 
-> 部署後填入網址
-> _(Demo link will be added after deployment)_
+**[https://todayjob-todolist-demo.vercel.app](https://todayjob-todolist-demo.vercel.app)**
 
 ---
 
