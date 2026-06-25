@@ -93,7 +93,7 @@ export function buildEmailNotificationTemplate(
   const linkLine = task.shareUrl ? `\n工作表單連結：${task.shareUrl}` : "";
   const noteLine = task.note || "-";
   const dashboardLine = options.dashboardUrl ? `\n儀表板：${options.dashboardUrl}` : "";
-  const subjectParts = ["Today Job", task.brandName || task.projectName || "專案工作", task.taskCategory];
+  const subjectParts = ["今日事今日畢", task.brandName || task.projectName || "專案工作", task.taskCategory];
   const subject = subjectParts.filter(Boolean).join("｜");
 
   const body = `Hi ${task.assignee},

@@ -676,8 +676,8 @@ ${template.body}`,
                 <Clipboard size={20} strokeWidth={2.2} />
               </div>
               <div>
-                <p className="text-[15px] font-semibold leading-tight">Today Job</p>
-                <p className="text-[12px] text-steel">To Do List</p>
+                <p className="text-[15px] font-semibold leading-tight">今日事，今日畢</p>
+                <p className="text-[12px] text-steel">To-Do List, To-Done List</p>
               </div>
             </div>
             <nav className="space-y-1 text-[13px] font-medium text-slate-700">
@@ -695,8 +695,8 @@ ${template.body}`,
             </nav>
           </div>
           <div className="rounded-md border border-slate-200 bg-slate-50 p-3 text-[12px] leading-5 text-slate-600">
-            <p className="font-semibold text-slate-900">今日事今日畢</p>
-            <p>Today Job To Do List</p>
+            <p className="font-semibold text-slate-900">今日事，今日畢</p>
+            <p>To-Do List, To-Done List</p>
           </div>
         </aside>
 
@@ -704,7 +704,7 @@ ${template.body}`,
           <header className="mb-4 flex flex-col gap-3 rounded-md border border-line bg-white px-4 py-4 shadow-sm md:flex-row md:items-center md:justify-between">
             <div>
               <h1 className="text-[24px] font-semibold leading-tight tracking-normal">
-                今日事今日畢，Today Job To Do List
+                今日事，今日畢，To-Do List, To-Done List
               </h1>
               <p className="mt-1 text-[13px] text-steel">{headerSubtitle}</p>
             </div>

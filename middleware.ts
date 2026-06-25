@@ -21,7 +21,7 @@ export function middleware(request: NextRequest) {
   return new NextResponse("Unauthorized", {
     status: 401,
     headers: {
-      "WWW-Authenticate": 'Basic realm="Today Job To Do List"',
+      "WWW-Authenticate": 'Basic realm="今日事，今日畢"',
     },
   });
 }

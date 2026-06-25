@@ -1,4 +1,4 @@
-# 今日事今日畢，Today Job To Do List
+# 今日事，今日畢，To-Do List, To-Done List
 
 > 本機任務追蹤儀表板，適合小型團隊分工與期限管理。
 > A local task dashboard for small team task tracking and deadline management.
