@@ -1450,22 +1450,25 @@ function SettingRow({
   }
 
   return (
-    <div className="grid gap-2 rounded-md border border-slate-100 bg-slate-50 p-2 md:grid-cols-[1fr_1.2fr_132px_auto_auto]">
+    <div
+      className={classNames(
+        "grid gap-2 rounded-md border border-slate-100 bg-slate-50 p-2",
+        item.type === "person"
+          ? "md:grid-cols-[1fr_1.2fr_132px_auto_auto]"
+          : "md:grid-cols-[1fr_auto_auto]",
+      )}
+    >
       <Input value={label} onChange={setLabel} placeholder="名稱" />
       {item.type === "person" ? (
         <Input type="email" value={email} onChange={setEmail} placeholder="Email" />
-      ) : (
-        <span className="hidden md:block" />
-      )}
+      ) : null}
       {item.type === "person" ? (
         <Select
           value={role}
           onChange={(value) => setRole(value as PersonRole)}
           options={PERSON_ROLES.map((option) => ({ value: option.value, label: option.label }))}
         />
-      ) : (
-        <span className="hidden md:block" />
-      )}
+      ) : null}
       <IconButton label="儲存" onClick={() => void save()} disabled={saving}>
         {saving ? <Loader2 size={15} className="animate-spin" /> : <Check size={15} />}
       </IconButton>
