@@ -1,0 +1,10 @@
+.next
+node_modules
+data/*.db
+data/*.db-*
+data/attachments/
+.DS_Store
+npm-debug.log*
+.env
+.env.local
+.env*.local
